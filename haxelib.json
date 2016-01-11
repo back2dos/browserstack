@@ -1,0 +1,23 @@
+{
+	"name": "browserstack",
+	"license": "MIT",
+	"tags": [
+		"js",
+		"utility",
+		"test",
+		"selenium",
+		"webdriver",
+    "browserstack"
+	],
+	"classPath": "src",
+	"description": "Run tests on BrowserStack",
+	"contributors": [
+		"back2dos"
+	],
+	"releasenote": "First haxelib release.",
+	"version": "0.0.0",
+	"url": "http://github.com/back2dos/browserstack",
+	"dependencies": {
+		"webdriver.js": ""
+	}
+}
