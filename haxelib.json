@@ -7,7 +7,7 @@
 		"test",
 		"selenium",
 		"webdriver",
-    "browserstack"
+		"browserstack"
 	],
 	"classPath": "src",
 	"description": "Run tests on BrowserStack",
