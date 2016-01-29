@@ -14,8 +14,8 @@
 	"contributors": [
 		"back2dos"
 	],
-	"releasenote": "First haxelib release.",
-	"version": "0.0.0",
+	"releasenote": "Be more picky about browser names.",
+	"version": "0.0.1",
 	"url": "http://github.com/back2dos/browserstack",
 	"dependencies": {
 		"webdriver.js": ""
