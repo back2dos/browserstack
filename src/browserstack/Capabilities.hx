@@ -1,7 +1,7 @@
 package browserstack;
 
 typedef Capabilities = {
-  browserName:String,
+  browserName:BrowserName,
   browserstack: {
     user:String,
     key:String,
