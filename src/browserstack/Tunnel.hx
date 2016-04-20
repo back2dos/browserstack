@@ -33,7 +33,7 @@ typedef TunnelOptions = {
   
   function new(options:TunnelOptions):Void;
   function start(?e:Error->Void):Void;
-  function stop(?e:Error->Void):Void;
+  function stop(e:Error->Void):Void;
   
   public inline function run<A>(f:Void->Future<A>):Surprise<A, Error>
     return 
