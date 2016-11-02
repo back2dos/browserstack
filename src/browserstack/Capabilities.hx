@@ -11,6 +11,7 @@ typedef Capabilities = {
   ?os: String,
   ?os_version: String,
   ?resolution: String,
-  ?plateform: String,
-  ?device: String
+  ?platform: String,
+  ?device: String,
+  ?version: String
 }
