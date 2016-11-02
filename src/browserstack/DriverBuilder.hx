@@ -17,11 +17,12 @@ abstract NativeCapabilities(Dynamic) {
   inline function new(v) 
     this = v; 
   
-  @:from static function fromHx(c:Capabilities)
-    return new NativeCapabilities({
-      browserName: c.browserName,
-      'browserstack.user': c.browserstack.user,
-      'browserstack.key': c.browserstack.key,
-      'browserstack.local' : if (c.browserstack.local) 'true' else 'false',
-    });
+  @:from static function fromHx(c:Capabilities){
+    var mapped = Reflect.copy(c);
+    Reflect.setField(mapped, 'browserstack.user', mapped.browserstack.user);
+    Reflect.setField(mapped, 'browserstack.key', mapped.browserstack.key);
+    Reflect.setField(mapped, 'browserstack.local', mapped.browserstack.local);
+    Reflect.deleteField(mapped, 'browserstack');
+    return new NativeCapabilities(mapped);
+  }
 }
