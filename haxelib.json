@@ -14,8 +14,8 @@
 	"contributors": [
 		"back2dos"
 	],
-	"releasenote": "Be more picky about browser names.",
-	"version": "0.0.1",
+	"releasenote": "Adds full capabilities options",
+	"version": "0.1.0",
 	"url": "http://github.com/back2dos/browserstack",
 	"dependencies": {
 		"webdriver.js": ""
